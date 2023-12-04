@@ -1,0 +1,14 @@
+package mentoring.projectmedicalappointments.doctor.domain.port.api;
+
+import mentoring.projectmedicalappointments.doctor.domain.model.Doctor;
+
+import java.util.List;
+
+public interface IDoctorServicePort {
+
+    Long saveDoctor(Doctor doctor);
+
+    Doctor getDoctorById(Long doctorId);
+
+    List<Doctor> getDoctors();
+}

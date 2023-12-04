@@ -16,4 +16,15 @@ public class Constants {
     public static final String URL_LICENSE = "http://springdoc.org";
     public static final String APP_DESCRIPTION = "Project for medical appointments";
     public static final String APP_VERSION = "1.0.0";
+
+
+
+    public static final String LOG_START_SAVE_DOCTOR = ">>> Start saveDoctor";
+    public static final String LOG_END_SAVE_DOCTOR = "<<< End saveDoctor";
+
+    public static final String LOG_START_GET_DOCTOR_BY_ID = ">>> Start getDoctorById";
+    public static final String LOG_END_GET_DOCTOR_BY_ID = "<<< End getDoctorById";
+
+    public static final String LOG_START_GET_DOCTORS = ">>> Start getDoctors";
+    public static final String LOG_END_GET_DOCTORS = "<<< End getDoctors";
 }
