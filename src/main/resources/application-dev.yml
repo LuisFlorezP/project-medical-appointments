@@ -1,5 +1,7 @@
 server:
   port: ${DEV_PORT}
+  servlet:
+    context-path: ${DEV_CONTEXT_PATH}
 
 spring:
   datasource:

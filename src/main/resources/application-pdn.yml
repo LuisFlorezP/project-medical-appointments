@@ -1,5 +1,7 @@
 server:
   port: ${PDN_PORT}
+  servlet:
+    context-path: ${PDN_CONTEXT_PATH}
 
 spring:
   datasource:
