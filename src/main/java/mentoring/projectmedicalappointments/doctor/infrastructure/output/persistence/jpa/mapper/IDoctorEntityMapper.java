@@ -1,7 +1,7 @@
-package mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.mapper;
+package mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.mapper;
 
 import mentoring.projectmedicalappointments.doctor.domain.model.Doctor;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.entity.DoctorEntity;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.entity.DoctorEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;

@@ -4,9 +4,9 @@ import lombok.RequiredArgsConstructor;
 import mentoring.projectmedicalappointments.doctor.domain.port.api.IDoctorServicePort;
 import mentoring.projectmedicalappointments.doctor.domain.port.spi.IDoctorPersistencePort;
 import mentoring.projectmedicalappointments.doctor.domain.usecase.DoctorUseCase;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.adapter.DoctorAdapter;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.mapper.IDoctorEntityMapper;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.repository.IDoctorRepository;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.adapter.DoctorAdapter;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.mapper.IDoctorEntityMapper;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.repository.IDoctorRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

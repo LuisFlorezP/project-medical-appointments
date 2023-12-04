@@ -1,4 +1,4 @@
-package mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.entity;
+package mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;

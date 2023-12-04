@@ -1,4 +1,4 @@
-package mentoring.projectmedicalappointments.doctor.infrastructure.adapter.input.rest;
+package mentoring.projectmedicalappointments.doctor.infrastructure.input.rest;
 
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;

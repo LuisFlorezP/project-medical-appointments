@@ -1,10 +1,11 @@
-package mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.adapter;
+package mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.adapter;
 
 import lombok.RequiredArgsConstructor;
 import mentoring.projectmedicalappointments.doctor.domain.model.Doctor;
 import mentoring.projectmedicalappointments.doctor.domain.port.spi.IDoctorPersistencePort;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.mapper.IDoctorEntityMapper;
-import mentoring.projectmedicalappointments.doctor.infrastructure.adapter.output.persistence.jpa.repository.IDoctorRepository;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.mapper.IDoctorEntityMapper;
+import mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.repository.IDoctorRepository;
+
 import java.util.List;
 
 @RequiredArgsConstructor
