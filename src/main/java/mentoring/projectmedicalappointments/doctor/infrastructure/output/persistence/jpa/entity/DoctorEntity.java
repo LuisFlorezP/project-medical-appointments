@@ -1,8 +1,11 @@
 package mentoring.projectmedicalappointments.doctor.infrastructure.output.persistence.jpa.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
+import mentoring.projectmedicalappointments.appointment.infrastructure.output.persistence.jpa.entity.AppointmentEntity;
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Builder
@@ -32,4 +35,12 @@ public class DoctorEntity {
     @JoinColumn(name = "id_location", referencedColumnName = "location_id")
     @JsonIgnoreProperties("doctors")
     private LocationEntity location;
+
+    @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
+    private List<AppointmentEntity> appointments;
+
+    public DoctorEntity(Long doctorId) {
+        this.doctorId = doctorId;
+    }
 }
