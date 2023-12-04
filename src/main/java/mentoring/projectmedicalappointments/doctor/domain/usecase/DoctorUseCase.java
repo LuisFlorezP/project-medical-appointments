@@ -27,4 +27,14 @@ public class DoctorUseCase implements IDoctorServicePort {
     public List<Doctor> getDoctors() {
         return doctorPersistencePort.getDoctors();
     }
+
+    @Override
+    public List<Doctor> getDoctorsByLocation(Long locationId) {
+        return doctorPersistencePort.getDoctorsByLocation(locationId);
+    }
+
+    @Override
+    public List<Doctor> getDoctorsBySpecialization(Long specializationId) {
+        return doctorPersistencePort.getDoctorsBySpecialization(specializationId);
+    }
 }

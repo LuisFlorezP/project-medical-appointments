@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 import javax.persistence.*;
 
-@Setter
-@Getter
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "doctor_entity")
+@Entity
+@Table(name = "doctor_entity")
 public class DoctorEntity {
 
     @Id

@@ -7,11 +7,10 @@ import lombok.RequiredArgsConstructor;
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class DoctorResponse {
+public class DoctorLocationResponse {
 
     private Long id;
     private String name;
     private Boolean availability;
     private String specialization;
-    private String location;
 }

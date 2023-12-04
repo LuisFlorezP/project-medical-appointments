@@ -10,4 +10,8 @@ public interface IDoctorPersistencePort {
     Doctor getDoctorById(Long doctorId);
 
     List<Doctor> getDoctors();
+
+    List<Doctor> getDoctorsByLocation(Long locationId);
+
+    List<Doctor> getDoctorsBySpecialization(Long specializationId);
 }

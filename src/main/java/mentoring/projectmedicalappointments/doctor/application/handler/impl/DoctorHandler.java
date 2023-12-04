@@ -3,7 +3,9 @@ package mentoring.projectmedicalappointments.doctor.application.handler.impl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import mentoring.projectmedicalappointments.doctor.application.dto.request.DoctorRequest;
+import mentoring.projectmedicalappointments.doctor.application.dto.response.DoctorLocationResponse;
 import mentoring.projectmedicalappointments.doctor.application.dto.response.DoctorResponse;
+import mentoring.projectmedicalappointments.doctor.application.dto.response.DoctorSpecializationResponse;
 import mentoring.projectmedicalappointments.doctor.application.handler.IDoctorHandler;
 import mentoring.projectmedicalappointments.doctor.application.mapper.IDoctorMapper;
 import mentoring.projectmedicalappointments.doctor.domain.model.Doctor;
@@ -52,6 +54,28 @@ public class DoctorHandler implements IDoctorHandler {
         List<DoctorResponse> responseList = doctorMapper.modelsToResponses(doctorList);
 
         log.info(LOG_END_GET_DOCTORS);
+        return responseList;
+    }
+
+    @Override
+    public List<DoctorLocationResponse> getDoctorsByLocation(Long locationId) {
+        log.info(LOG_START_GET_DOCTORS_BY_LOCATION);
+
+        List<Doctor> doctorList = doctorServicePort.getDoctorsByLocation(locationId);
+        List<DoctorLocationResponse> responseList = doctorMapper.modelsLocationToResponses(doctorList);
+
+        log.info(LOG_END_GET_DOCTORS_BY_LOCATION);
+        return responseList;
+    }
+
+    @Override
+    public List<DoctorSpecializationResponse> getDoctorsBySpecialization(Long specializationId) {
+        log.info(LOG_START_GET_DOCTORS_BY_SPECIALIZATION);
+
+        List<Doctor> doctorList = doctorServicePort.getDoctorsBySpecialization(specializationId);
+        List<DoctorSpecializationResponse> responseList = doctorMapper.modelsSpecializationToResponses(doctorList);
+
+        log.info(LOG_END_GET_DOCTORS_BY_SPECIALIZATION);
         return responseList;
     }
 }

@@ -27,4 +27,10 @@ public class Constants {
 
     public static final String LOG_START_GET_DOCTORS = ">>> Start getDoctors";
     public static final String LOG_END_GET_DOCTORS = "<<< End getDoctors";
+
+    public static final String LOG_START_GET_DOCTORS_BY_LOCATION = ">>> Start getDoctorsByLocation";
+    public static final String LOG_END_GET_DOCTORS_BY_LOCATION = "<<< End getDoctorsByLocation";
+
+    public static final String LOG_START_GET_DOCTORS_BY_SPECIALIZATION = ">>> Start getDoctorsBySpecialization";
+    public static final String LOG_END_GET_DOCTORS_BY_SPECIALIZATION = "<<< End getDoctorsBySpecialization";
 }

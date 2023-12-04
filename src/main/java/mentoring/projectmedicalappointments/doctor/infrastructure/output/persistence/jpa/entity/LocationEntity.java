@@ -5,12 +5,12 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
-@Setter
-@Getter
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "location_entity")
+@Entity
+@Table(name = "location_entity")
 public class LocationEntity {
 
     @Id
@@ -24,4 +24,8 @@ public class LocationEntity {
     @OneToMany(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private List<DoctorEntity> doctors;
+
+    public LocationEntity(Long locationId) {
+        this.locationId = locationId;
+    }
 }
