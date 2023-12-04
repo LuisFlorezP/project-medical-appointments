@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: ${PDN_URL:jdbc}
+    username: ${PDN_USER}
+    password: ${PDN_PASSWORD}
+    driver-class-name: ${PDN_DRIVER_NAME}
+  jpa:
+    show-sql: ${PDN_SHOW_SQL}
+    hibernate:
+      ddl-auto: ${PDN_HIBERNATE_DDL_AUTO}
