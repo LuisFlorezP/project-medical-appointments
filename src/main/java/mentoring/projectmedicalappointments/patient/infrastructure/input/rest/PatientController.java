@@ -1,6 +1,7 @@
 package mentoring.projectmedicalappointments.patient.infrastructure.input.rest;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import mentoring.projectmedicalappointments.patient.application.dto.request.PatientRequest;
 import mentoring.projectmedicalappointments.patient.application.dto.response.PatientResponse;
@@ -13,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/patients")
 @RequiredArgsConstructor
+@Tag(name = "Patient Controller", description = "Controller to the Patient entity.")
 public class PatientController {
 
     private final IPatientHandler patientHandler;
