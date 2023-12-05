@@ -41,4 +41,12 @@ public class Constants {
 
     public static final String LOG_START_GET_APPOINTMENTS = ">>> Start getAppointments";
     public static final String LOG_END_GET_APPOINTMENTS = "<<< End getAppointments";
+
+
+
+    public static final String LOG_START_SAVE_PATIENT = ">>> Start savePatient";
+    public static final String LOG_END_SAVE_PATIENT = "<<< End savePatient";
+
+    public static final String LOG_START_GET_PATIENTS = ">>> Start getPatients";
+    public static final String LOG_END_GET_PATIENTS = "<<< End getPatients";
 }
