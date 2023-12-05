@@ -16,3 +16,7 @@ INSERT INTO appointment_state_entity VALUES
   (1, 'Programada'),
   (2, 'Cancelada'),
   (3, 'Realizada');
+
+INSERT INTO gender_entity VALUES
+  (1, 'Masculino'),
+  (2, 'Femenino');
